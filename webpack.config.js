@@ -22,6 +22,14 @@ module.exports={
 		new HtmlWebpackPlugin({
 			title:'Hello world app'
 		})
-	]
+	],
+	devServer:{
+		// 这里进行对webpack-dev-server的配置
+		contentBase:"./",
+		historyApiFallback:true,
+		inline:true,
+		// hot:true,
+		port:"9090"
+	}
 }
 
