@@ -30,6 +30,15 @@ module.exports={
 			},{
 				loader:'css-loader'
 			}]
+		},{
+			test:/\.less$/,
+			use:[{
+				loader:'style-loader'
+			},{
+				loader:'css-loader'
+			},{
+				loader:'less-loader'
+			}]
 		}]
 	},
 	// 配置webpack插件，注意，它是个数组，其他人都是对象，与众不同

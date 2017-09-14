@@ -12,6 +12,7 @@
 5.然后我们开始引入css，这个时候我们引入了这样的两个loader，`style-loader`和`css-loader`。
 > 我们安装style-loader是为了在html中以style的方式嵌入css，至于css-loader，那是因为node本身只认识css而已，大家各司其职。
 
+6.接下来我们安装`less-loader`使我们能够进行less语法的编译。安装完了之后我们配置一下webpack,再次运行的时候我发现我装了`less-loader`但是没有安装`less`本身导致运行不了，于是继续安装一下less.至此我们的less配置成功。
 *  *  *
 
 #### 1.htmlwebpackplugin配置完毕，配置刚开始的框架结束

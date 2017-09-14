@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './first.css';
+import './second.less';
 
 class Index extends React.Component{
 	constructor(){
