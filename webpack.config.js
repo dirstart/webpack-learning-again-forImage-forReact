@@ -39,7 +39,10 @@ module.exports={
 			},{
 				loader:'less-loader'
 			}]
-		}]
+		},{
+				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+				loader: "url-loader?limit=8192&name=img/[name].[hash:8].[ext]"
+     	}]
 	},
 	// 配置webpack插件，注意，它是个数组，其他人都是对象，与众不同
 	plugins:[
